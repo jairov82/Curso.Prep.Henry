@@ -134,9 +134,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if(numeroDeDia===1 && numeroDeDia===7){
-    return 'Es fin de semana'}
-  else{return 'Es dia laboral'}
+  if(numeroDeDia===1 || numeroDeDia===7){
+    return "Es fin de semana"}
+  else{return "Es dia Laboral"}
 } 
 
 
@@ -144,7 +144,10 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  let str=String(n);
+  let digito=str.slice(0,1)
+  if(digito==='9'){return true}
+  else{return false}
 }
 
 
